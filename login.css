@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main{
+    height: 100vh;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./assets/geometric-pattern-background-vector-white_53876-126684.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.189);
+    z-index: 3;
+}
+
+.container{
+    width: min(800px, 90%);
+    margin: auto;
+}
+
+.wrapper{
+    display: flex;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.132);
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    z-index: 5;
+}
+
+.image-wrapper{
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background: url('https://source.unsplash.com/3k3l2brxmwQ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    z-index: 0;
+    position: relative;
+}
+
+.image-wrapper h1{
+    position: relative;
+    font-size: 5rem;
+    line-height: 80px;
+    z-index: 2;
+}
+
+
+.overlay{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(27, 27, 27, 0.783);
+}
+
+
+.form-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+    background: white;
+}
+
+.form-wrapper p{
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.form-control input{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 100;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+form{
+    width: 100%;
+}
+
+.form-title{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.form-wrapper button{
+    font-size: 1.2rem;
+    border: none;
+    background: rgb(26, 26, 26);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+@media(max-width: 600px){
+    .image-wrapper{
+        display: none;
+    }
+    .form-wrapper{
+        padding: 40px 20px;
+    }
+}
